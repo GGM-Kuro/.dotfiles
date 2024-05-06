@@ -5,3 +5,6 @@
 [submodule "shell/zsh/.zim/modules/completion"]
 	path = shell/zsh/.zim/modules/completion
 	url = git@github.com:zimfw/completion.git
+[submodule "editors/nvim"]
+	path = editors/nvim
+	url = git@github.com:GGM-Kuro/nvim.git
