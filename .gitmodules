@@ -1,0 +1,7 @@
+[submodule "modules/dotly"]
+	path = modules/dotly
+	url = https://github.com/CodelyTV/dotly.git
+	branch = main
+[submodule "shell/zsh/.zim/modules/completion"]
+	path = shell/zsh/.zim/modules/completion
+	url = git@github.com:zimfw/completion.git

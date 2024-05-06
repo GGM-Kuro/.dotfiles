@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo "$(/usr/bin/ip addr show dev enp45s0 | grep -oP "inet \K[\d.]+")"
+# echo "$(/usr/bin/ifconfig wlan0 | grep -oP "inet \K[\d.]+")"

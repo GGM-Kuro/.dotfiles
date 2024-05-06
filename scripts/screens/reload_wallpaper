@@ -1,0 +1,3 @@
+#!/bin/sh
+
+feh --bg-fill /home/kuro/Desktop/kuro/Wallpapers/fondo.png
