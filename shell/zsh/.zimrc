@@ -1,7 +1,8 @@
 # If you modify this execute `zimfw uninstall & zimfw install`
-zmodule zimfw/git-info
-zmodule zimfw/input
-zmodule zimfw/completion
-zmodule zsh-users/zsh-syntax-highlighting
-zmodule zsh-users/zsh-autosuggestions
-zmodule spaceship-prompt/spaceship-prompt --name spaceship --no-submodules
+zmodule zimfw/git-info --use degit
+zmodule zimfw/input --use degit
+zmodule zimfw/completion --use degit
+zmodule zsh-users/zsh-syntax-highlighting --use degit
+zmodule zsh-users/zsh-autosuggestions --use degit
+# zmodule spaceship-prompt/spaceship-prompt --name spaceship --no-submodules
+zmodule romkatv/powerlevel10k --use degit

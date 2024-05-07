@@ -6,4 +6,4 @@ source /home/kuro/.dotfiles/shell/zsh/.zim/modules/input/init.zsh
 source /home/kuro/.dotfiles/shell/zsh/.zim/modules/completion/init.zsh
 source /home/kuro/.dotfiles/shell/zsh/.zim/modules/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /home/kuro/.dotfiles/shell/zsh/.zim/modules/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /home/kuro/.dotfiles/shell/zsh/.zim/modules/spaceship/spaceship.zsh
+source /home/kuro/.dotfiles/shell/zsh/.zim/modules/powerlevel10k/powerlevel10k.zsh-theme
