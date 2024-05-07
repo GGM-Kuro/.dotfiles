@@ -9,8 +9,11 @@ export CODELY_THEME_PWD_MODE="short" # full, short, home_relative
 # ------------------------------------------------------------------------------
 # Languages
 # ------------------------------------------------------------------------------
-export JAVA_HOME='/Library/Java/JavaVirtualMachines/amazon-corretto-15.jdk/Contents/Home'
+export JAVA_HOME='/usr/lib/jvm/java-17-openjdk'
 export GEM_HOME="$HOME/.gem"
+export DART_HOME="/usr/bin/flutter"
+export FLUTTER_HOME="/usr/bin/flutter/"
+export ANDROID_HOME='/opt/android-sdk/'
 export GOPATH="$HOME/.go"
 
 # ------------------------------------------------------------------------------
@@ -34,6 +37,9 @@ path=(
 	"$DOTFILES_PATH/bin"
 	"$JAVA_HOME/bin"
 	"$GEM_HOME/bin"
+	"$DART_HOME/bin"
+	"$FLUTTER_HOME/bin"
+	# "$ANDROID_HOME/bin"
 	"$GOPATH/bin"
 	"$HOME/.cargo/bin"
 	"/usr/local/opt/ruby/bin"
@@ -41,6 +47,8 @@ path=(
 	"/opt/homebrew/bin"
 	"/usr/local/bin"
 	"/usr/local/sbin"
+    "/opt/kitty/bin/kitty"
+    "/usr/bin/flutter/bin"
 	"/bin"
 	"/usr/bin"
 	"/usr/sbin"
