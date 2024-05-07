@@ -9,3 +9,5 @@
     ~/.dotly: os/linux/.dotly
     ~/.config/kitty: os/linux/kitty
     ~/.config/zellij: os/linux/zellij
+    ~/.config/nvim: editors/nvim
+

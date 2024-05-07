@@ -1,0 +1,5 @@
+export DOTFILES_PATH="/home/kuro/.dotfiles"
+export DOTLY_PATH="/home/kuro/.dotfiles/modules/dotly"
+export ZIM_HOME="/home/kuro/.dotfiles/shell/zsh/.zim"
+
+source "$DOTFILES_PATH/shell/zsh/.zshrc"
