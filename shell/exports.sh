@@ -1,6 +1,7 @@
 # ------------------------------------------------------------------------------
 # Codely theme config
 # ------------------------------------------------------------------------------
+#sudo/sudo.plugin.zsh
 export CODELY_THEME_MINIMAL=false
 export CODELY_THEME_MODE="dark"
 export CODELY_THEME_PROMPT_IN_NEW_LINE=false
@@ -12,9 +13,23 @@ export CODELY_THEME_PWD_MODE="short" # full, short, home_relative
 export JAVA_HOME='/usr/lib/jvm/java-17-openjdk'
 export GEM_HOME="$HOME/.gem"
 export DART_HOME="/usr/bin/flutter"
+export GOPATH="$HOME/.go"
+
+# ------------------------------------------------------------------------------
+# Flutter enviroment
+# ------------------------------------------------------------------------------
+
 export FLUTTER_HOME="/usr/bin/flutter/"
 export ANDROID_HOME='/opt/android-sdk/'
-export GOPATH="$HOME/.go"
+export ANDROID_SDK_ROOT="$ANDROID_HOME"
+export ANDROID_AVD_HOME='/home/kuro/.android/avd'
+
+
+# ------------------------------------------------------------------------------
+# Custom
+# ------------------------------------------------------------------------------
+
+export PROJECT_PATHS=("$HOME/Desktop/kuro/projects")
 
 # ------------------------------------------------------------------------------
 # Apps
@@ -39,7 +54,11 @@ path=(
 	"$GEM_HOME/bin"
 	"$DART_HOME/bin"
 	"$FLUTTER_HOME/bin"
-	# "$ANDROID_HOME/bin"
+	"$ANDROID_HOME/cmdline-tools/latest/bin"
+	"$ANDROID_HOME/platform-tools"
+    # "$ANDROID_HOME/tools/"
+    "$ANDROID_HOME/emulator/"
+    # "$ANDROID_HOME/tools/bin/"
 	"$GOPATH/bin"
 	"$HOME/.cargo/bin"
 	"/usr/local/opt/ruby/bin"

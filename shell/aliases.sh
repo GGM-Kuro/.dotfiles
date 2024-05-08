@@ -32,6 +32,9 @@ alias i.='(idea $PWD &>/dev/null &)'
 alias c.='(code $PWD &>/dev/null &)'
 alias o.='open .'
 alias up='dot package update_all'
+alias pacman-npm= 'sudo pacman --overwrite "*" -S npm'
+alias pdf="mupdf"
+alias pj='cd $PROJECT_PATHS/$(dot kuro pj)'
 
 # Os
 alias rs='dot screens reload_wallpaper'
