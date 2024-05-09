@@ -21,4 +21,6 @@
     ~/.config/ranger: os/linux/ranger
     ~/.config/kitty: os/linux/kitty
     ~/.config/zellij: os/linux/zellij
+    ~/.config/rofi: os/linux/rofi
+    ~/.config/yazi: os/linux/yazi
 

@@ -1,0 +1,75 @@
+return{
+  foreground = "#a9b1d6",
+  background = "#1a1b26",
+  cursor_bg = "#cdcecf",
+  cursor_border = "#cdcecf",
+  cursor_fg = "#2e3440",
+  compose_cursor = '#c9826b',
+  selection_bg = "#3e4a5b",
+  selection_fg = "#cdcecf",
+  scrollbar_thumb = "#7e8188",
+  split = "#232831",
+  visual_bell = "#cdcecf",
+  ansi = {
+    "#3b4252", "#bf616a", "#73daca", "#ebcb8b", "#7aa2f7", "#b48ead", "#88c0d0", "#e5e9f0"
+  },
+  brights = {
+    "#465780", "#d06f79", "#b1d196", "#f0d399", "#8cafd2", "#c895bf", "#93ccdc", "#e7ecf4"
+  },
+
+  indexed = {
+    [16] = "#bf88bc",
+    [17] = "#c9826b"
+  },
+
+  tab_bar = {
+    background = "#232831",
+    inactive_tab_edge = "#232831",
+    inactive_tab_edge_hover = "#39404f",
+    active_tab = {
+
+      bg_color = "#7e8188",
+      fg_color = "#2e3440",
+      intensity = "Normal",
+      italic = false,
+      strikethrough = false,
+      underline = "None",
+    },
+    inactive_tab = {
+
+      bg_color = "#39404f",
+      fg_color = "#abb1bb",
+      intensity = "Normal",
+      italic = false,
+      strikethrough = false,
+      underline = "None",
+    },
+    inactive_tab_hover = {
+
+      bg_color = "#444c5e",
+      fg_color = "#cdcecf",
+      intensity = "Normal",
+      italic = false,
+      strikethrough = false,
+      underline = "None",
+    },
+    new_tab = {
+
+      bg_color = "#2e3440",
+      fg_color = "#abb1bb",
+      intensity = "Normal",
+      italic = false,
+      strikethrough = false,
+      underline = "None",
+    },
+    new_tab_hover = {
+
+      bg_color = "#444c5e",
+      fg_color = "#cdcecf",
+      intensity = "Normal",
+      italic = false,
+      strikethrough = false,
+      underline = "None",
+    }
+  },
+}

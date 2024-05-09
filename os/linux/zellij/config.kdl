@@ -5,15 +5,15 @@ keybinds clear-defaults=true {
         bind "Alt c" { Copy; }
         bind "Alt p" { SwitchToMode "pane"; }
         bind "Alt t" { SwitchToMode "tab"; }
-        bind "Alt r" { SwitchToMode "resize"; }
+        bind "Alt R" { SwitchToMode "resize"; }
         bind "Alt m" { SwitchToMode "move"; }
-        bind "Alt s" { SwitchToMode "session"; }
+        bind "Alt x" { SwitchToMode "session"; }
     }
     locked {
         bind "Alt g" { SwitchToMode "Normal"; }
     }
     resize {
-        bind "Alt r" { SwitchToMode "Normal"; }
+        bind "Alt R" { SwitchToMode "Normal"; }
         bind "h" "Left" { Resize "Increase Left"; }
         bind "t" "Down" { Resize "Increase Down"; }
         bind "n" "Up" { Resize "Increase Up"; }

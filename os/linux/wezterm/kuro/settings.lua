@@ -1,15 +1,15 @@
 local wezterm = require 'wezterm'
 
-
 local settings = {
   force_reverse_video_cursor = true,
-  color_scheme = 'nordfox',
+  colors = require 'themes.kuro',
+  -- color_scheme = "kuro",
   window_background_opacity = 0.95,
   font = wezterm.font_with_fallback({
+    'Hack Nerd Font',
     { family = 'Fira Code Nerd Font', weight = 'Regular', italic = false },
-    { family = 'Symbols Nerd Font', weight = 'Regular', italic = false},
-    { family = 'Symbols Nerd Font Mono', weight = 'Regular', italic = false},
-    { family = 'UbuntuMono Nerd Font Mono', italic = false},
+    'Symbols Nerd Font',
+    'Symbols Nerd Font Mono',
   }),
   hide_tab_bar_if_only_one_tab = true,
   max_fps = 120,

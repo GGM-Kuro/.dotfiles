@@ -35,7 +35,11 @@ alias up='dot package update_all'
 alias pacman-npm= 'sudo pacman --overwrite "*" -S npm'
 alias pdf="mupdf"
 alias pj='cd $PROJECT_PATHS/$(dot kuro pj)'
+alias ff='yazi'
 
 # Os
 alias rs='dot screens reload_wallpaper'
-alias msi='dot screens msi'
+alias msi='dot screens msi && feh --bg-fill /home/kuro/Desktop/kuro/Images/fondo.png'
+alias zs='zellij attach $(zellij list-sessions -s | fzf)'
+alias zq='zellij kill-session $(zellij list-sessions -s | fzf)'
+alias zqa='zellij kill-all-sessions'
