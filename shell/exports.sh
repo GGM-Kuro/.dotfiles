@@ -13,17 +13,13 @@ export CODELY_THEME_PWD_MODE="short" # full, short, home_relative
 export JAVA_HOME='/usr/lib/jvm/java-17-openjdk'
 export GEM_HOME="$HOME/.gem"
 export DART_HOME="/usr/bin/flutter"
-export DART_SDK="/opt/dart-sdk/"
 export GOPATH="$HOME/.go"
 
 # ------------------------------------------------------------------------------
 # Flutter enviroment
 # ------------------------------------------------------------------------------
 
-export FLUTTER_HOME="/usr/bin/flutter/"
 export ANDROID_HOME='/opt/android-sdk/'
-export ANDROID_SDK_ROOT="$ANDROID_HOME"
-export ANDROID_AVD_HOME='/home/kuro/.android/avd'
 
 
 # ------------------------------------------------------------------------------
@@ -55,14 +51,6 @@ path=(
 	"$DOTFILES_PATH/bin"
 	"$JAVA_HOME/bin"
 	"$GEM_HOME/bin"
-	"$DART_HOME/bin"
-	"$FLUTTER_HOME/bin"
-    "$DART_SDK"
-	"$ANDROID_HOME/cmdline-tools/latest/bin"
-	"$ANDROID_HOME/platform-tools"
-    # "$ANDROID_HOME/tools/"
-    "$ANDROID_HOME/emulator/"
-    # "$ANDROID_HOME/tools/bin/"
 	"$GOPATH/bin"
 	"$HOME/.cargo/bin"
 	"/usr/local/opt/ruby/bin"

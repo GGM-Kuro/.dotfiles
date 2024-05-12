@@ -39,7 +39,8 @@ alias ff='yazi'
 
 # Os
 alias rs='dot screens reload_wallpaper'
-alias msi='dot screens msi && feh --bg-fill /home/kuro/Desktop/kuro/Images/fondo.png'
+alias msi='dot screens msi'
+alias main='dot screens main'
 alias zs='zellij attach $(zellij list-sessions -s | fzf)'
 alias zq='zellij kill-session $(zellij list-sessions -s | fzf)'
 alias zqa='zellij kill-all-sessions'
