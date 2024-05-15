@@ -23,4 +23,5 @@
     ~/.config/zellij: os/linux/zellij
     ~/.config/rofi: os/linux/rofi
     ~/.config/yazi: os/linux/yazi
+    ~/.config/qtile: os/linux/qtile
 

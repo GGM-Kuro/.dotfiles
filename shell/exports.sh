@@ -19,7 +19,7 @@ export GOPATH="$HOME/.go"
 # Flutter enviroment
 # ------------------------------------------------------------------------------
 
-export ANDROID_HOME='/opt/android-sdk/'
+export ANDROID_HOME='/home/kuro/Android/Sdk'
 
 
 # ------------------------------------------------------------------------------
@@ -53,6 +53,8 @@ path=(
 	"$GEM_HOME/bin"
 	"$GOPATH/bin"
 	"$HOME/.cargo/bin"
+    "$ANDROID_HOME/platform-tools/"
+    "/opt/flutter/bin"
 	"/usr/local/opt/ruby/bin"
 	"/usr/local/opt/python/libexec/bin"
 	"/opt/homebrew/bin"
