@@ -8,6 +8,3 @@
 [submodule "editors/nvim"]
 	path = editors/nvim
 	url = git@github.com:GGM-Kuro/nvim.git
-[submodule "os/linux/qtile"]
-	path = os/linux/qtile
-	url = git@github.com:GGM-Kuro/qtile.git
