@@ -12,15 +12,14 @@ export CODELY_THEME_PWD_MODE="short" # full, short, home_relative
 # ------------------------------------------------------------------------------
 export JAVA_HOME='/usr/lib/jvm/java-17-openjdk'
 export GEM_HOME="$HOME/.gem"
-export DART_HOME="/usr/bin/flutter"
 export GOPATH="$HOME/.go"
 
 # ------------------------------------------------------------------------------
 # Flutter enviroment
 # ------------------------------------------------------------------------------
 
-export ANDROID_HOME='/home/kuro/Android/Sdk'
-
+export FLUTTER_HOME="$HOME/.dev/flutter/"
+export ANDROID_HOME="$HOME/.dev/android-sdk"
 
 # ------------------------------------------------------------------------------
 # Custom
@@ -45,6 +44,8 @@ export MYVIMRC="$DOTFILES_PATH/editors/nvim/"
 # Path - The higher it is, the more priority it has
 # ------------------------------------------------------------------------------
 path=(
+    "$FLUTTER_HOME/bin"
+    "$ANDROID_HOME/cmdline-tools/latest/bin"
     "$HOME/.rbenv/shims"
 	"$HOME/bin"
 	"$DOTLY_PATH/bin"
@@ -53,15 +54,12 @@ path=(
 	"$GEM_HOME/bin"
 	"$GOPATH/bin"
 	"$HOME/.cargo/bin"
-    "$ANDROID_HOME/platform-tools/"
-    "/opt/flutter/bin"
 	"/usr/local/opt/ruby/bin"
 	"/usr/local/opt/python/libexec/bin"
 	"/opt/homebrew/bin"
 	"/usr/local/bin"
 	"/usr/local/sbin"
     "/opt/kitty/bin"
-    "/usr/bin/flutter/bin"
 	"/bin"
 	"/usr/bin"
 	"/usr/sbin"
