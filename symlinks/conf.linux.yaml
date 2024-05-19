@@ -24,4 +24,6 @@
     ~/.config/rofi: os/linux/rofi
     ~/.config/yazi: os/linux/yazi
     ~/.config/qtile: os/linux/qtile
+    ~/.config/.xprofile: os/linux/.xprofile
+    ~/.config/.Xresources: os/linux/.Xresources
 

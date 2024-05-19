@@ -1,0 +1,19 @@
+#!/bin/sh
+#
+export PATH=/opt/kitty/bin:$PATH
+
+#Screens
+# hdmi=`xrandr | grep ' connected' | grep 'HDMI' | awk '{print $1}'`
+
+# if [ "$hdmi" = "HDMI-1" ]; then
+#   xrandr --output HDMI-1 --primary &
+# else
+#   xrandr --output DP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --off --output DP-1 --off &
+# fi
+
+xxset s off -dpms
+setxkbmap -layout us intl
+numlockx &
+nm-applet &
+picom &
+feh --bg-fill /home/kuro/Desktop/kuro/Images/fondo.png

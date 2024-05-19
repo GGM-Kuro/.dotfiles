@@ -18,8 +18,11 @@ export GOPATH="$HOME/.go"
 # Flutter enviroment
 # ------------------------------------------------------------------------------
 
-export FLUTTER_HOME="$HOME/.dev/flutter/"
-export ANDROID_HOME="$HOME/.dev/android-sdk"
+# export FLUTTER_HOME="$HOME/.dev/android-sdk"
+
+
+# export ANDROID_HOME="$HOME/Android/Sdk/platform-tools/adb"
+
 
 # ------------------------------------------------------------------------------
 # Custom
@@ -44,8 +47,11 @@ export MYVIMRC="$DOTFILES_PATH/editors/nvim/"
 # Path - The higher it is, the more priority it has
 # ------------------------------------------------------------------------------
 path=(
-    "$FLUTTER_HOME/bin"
-    "$ANDROID_HOME/cmdline-tools/latest/bin"
+    "/home/kuro/Android/Sdk/platform-tools/"
+    "/home/kuro/Android/Sdk/cmdline-tools/latest/bin/"
+    "/home/kuro/Android/Sdk/build-tools/34.0.0/"
+    "$ANDROID_HOME/"
+    "/usr/bin/flutter/bin/"
     "$HOME/.rbenv/shims"
 	"$HOME/bin"
 	"$DOTLY_PATH/bin"
