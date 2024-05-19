@@ -16,4 +16,4 @@ setxkbmap -layout us intl
 numlockx &
 nm-applet &
 picom &
-feh --bg-fill /home/kuro/Desktop/kuro/Images/fondo.png
+feh --bg-fill --randomize Desktop/kuro/Wallpapers/
