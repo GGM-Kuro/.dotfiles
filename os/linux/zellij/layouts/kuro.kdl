@@ -12,7 +12,7 @@ layout {
         pane size=2 borderless=true {
             plugin location="file:~/.config/zellij/plugins/zjstatus.wasm" {
               format_left   "{mode}#[bg=238,fg=blue,bold]{session}#[bg=232,fg=238]{tabs}#[fg=232]"
-              format_right  "{command_git_branch}{datetime}"
+              format_right  "{command_git} {datetime}"
               format_space  "{char}"
 
               border_enabled  "true"
@@ -27,10 +27,10 @@ layout {
               tab_normal   "#[bg=232,fg=238] {name}#[fg=242,bg=232] "
               tab_active   "#[bg=232,fg=green,bold,italic] {name}#[fg=242,bg=232] "
 
-              command_git_branch_command     "git rev-parse --abbrev-ref HEAD"
-              command_git_branch_format      "#[fg=blue] {stdout}"
-              command_git_branch_interval    "10"
-              command_git_branch_rendermode  "static"
+              command_git_command     "zsh git rev-parse --abbrev-ref HEAD"
+              command_git_format      "#[fg=blue] {stdout}"
+              command_git_interval    "10"
+              command_git_rendermode  "static"
 
               datetime        "#[fg=yellow,bold] {format} "
               datetime_format "󰃭 %A,%d.%b.%Y  %l:%M%p"

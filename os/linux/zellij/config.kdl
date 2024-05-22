@@ -77,11 +77,11 @@ keybinds clear-defaults=true {
         bind "Alt s" { SwitchToMode "Normal"; }
         bind "e" { EditScrollback; SwitchToMode "Normal"; }
         bind "s" { SwitchToMode "EnterSearch"; SearchInput 0; }
-        bind "Ctrl c" { ScrollToBottom; SwitchToMode "Normal"; }
+        bind "Alt c" { ScrollToBottom; SwitchToMode "Normal"; }
         bind "t" "Down" { ScrollDown; }
         bind "n" "Up" { ScrollUp; }
-        bind "Ctrl f" "PageDown" "Right" "s" { PageScrollDown; }
-        bind "Ctrl b" "PageUp" "Left" "h" { PageScrollUp; }
+        bind "Alt f" "PageDown" "Right" "s" { PageScrollDown; }
+        bind "Alt b" "PageUp" "Left" "h" { PageScrollUp; }
         bind "d" { HalfPageScrollDown; }
         bind "u" { HalfPageScrollUp; }
         // uncomment this and adjust key if using copy_on_select=false
@@ -89,11 +89,11 @@ keybinds clear-defaults=true {
     }
     search {
         bind "Alt s" { SwitchToMode "Normal"; }
-        bind "Ctrl c" { ScrollToBottom; SwitchToMode "Normal"; }
+        bind "Alt c" { ScrollToBottom; SwitchToMode "Normal"; }
         bind "t" "Down" { ScrollDown; }
         bind "n" "Up" { ScrollUp; }
-        bind "Ctrl f" "PageDown" "Right" "s" { PageScrollDown; }
-        bind "Ctrl b" "PageUp" "Left" "h" { PageScrollUp; }
+        bind "Alt f" "PageDown" "Right" "s" { PageScrollDown; }
+        bind "Alt b" "PageUp" "Left" "h" { PageScrollUp; }
         bind "d" { HalfPageScrollDown; }
         bind "u" { HalfPageScrollUp; }
         bind "n" { Search "down"; }
@@ -128,7 +128,7 @@ keybinds clear-defaults=true {
     }
     tmux {
         bind "[" { SwitchToMode "Scroll"; }
-        bind "Ctrl b" { Write 2; SwitchToMode "Normal"; }
+        bind "Alt b" { Write 2; SwitchToMode "Normal"; }
         bind "\"" { NewPane "Down"; SwitchToMode "Normal"; }
         bind "%" { NewPane "Right"; SwitchToMode "Normal"; }
         bind "z" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
@@ -150,8 +150,8 @@ keybinds clear-defaults=true {
         bind "x" { CloseFocus; SwitchToMode "Normal"; }
     }
     shared_except "locked" {
-        bind "Ctrl g" { SwitchToMode "Locked"; }
-        bind "Ctrl q" { Quit; }
+        bind "Alt g" { SwitchToMode "Locked"; }
+        bind "Alt q" { Quit; }
         bind "Alt n" { NewPane; }
         bind "Alt h" "Alt Left" { MoveFocusOrTab "Left"; }
         bind "Alt s" "Alt Right" { MoveFocusOrTab "Right"; }
@@ -166,25 +166,25 @@ keybinds clear-defaults=true {
         bind "Enter" "Esc" { SwitchToMode "Normal"; }
     }
     shared_except "pane" "normal" "locked" {
-        bind "Ctrl p" { SwitchToMode "Pane"; }
+        bind "Alt p" { SwitchToMode "Pane"; }
     }
     shared_except "resize" "normal" "locked" {
-        bind "Ctrl n" { SwitchToMode "Resize"; }
+        bind "Alt n" { SwitchToMode "Resize"; }
     }
     shared_except "scroll" "normal" "locked" {
-        bind "Ctrl s" { SwitchToMode "Scroll"; }
+        bind "Alt s" { SwitchToMode "Scroll"; }
     }
     shared_except "session" "normal" "locked" {
-        bind "Ctrl o" { SwitchToMode "Session"; }
+        bind "Alt o" { SwitchToMode "Session"; }
     }
     shared_except "tab" "normal" "locked" {
-        bind "Ctrl t" { SwitchToMode "Tab"; }
+        bind "Alt t" { SwitchToMode "Tab"; }
     }
     shared_except "move" "normal" "locked" {
-        bind "Ctrl h" { SwitchToMode "Move"; }
+        bind "Alt h" { SwitchToMode "Move"; }
     }
     shared_except "tmux" "normal" "locked" {
-        bind "Ctrl b" { SwitchToMode "Tmux"; }
+        bind "Alt b" { SwitchToMode "Tmux"; }
     }
 }
 
@@ -324,12 +324,12 @@ default_layout "kuro"
 //   - system (default)
 //   - primary
 //
-// copy_clipboard "primary"
+copy_clipboard "primary"
 
 // Enable or disable automatic copy (and clear) of selection when releasing mouse
 // Default: true
 //
-// copy_on_select false
+copy_on_select true
 
 // Path to the default editor to use to edit pane scrollbuffer
 // Default: $EDITOR or $VISUAL

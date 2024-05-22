@@ -1,0 +1,54 @@
+layout {
+    cwd "$HOME/Desktop/kuro/projects/flutter/"
+    tab name="project" focus=true {
+        pane name="nvim" size="85%"{
+            focus true
+        }
+        pane {
+            size "15%"
+            focus true
+            split_direction "horizontal"
+            name "Log"
+        }
+    }
+
+    tab name="shell" {
+        pane name="shell"
+    }
+
+    default_tab_template {
+        children
+        pane size=2 borderless=true {
+            plugin location="file:~/.config/zellij/plugins/zjstatus.wasm" {
+              format_left   "#[fg=264]{mode} {tabs}"
+              format_right  "#[fg=blue,bold] {session} 󰓩  "
+              format_space  "{char}"
+
+              border_enabled  "true"
+              border_char     "-"
+              border_format   "#[fg=blue]{char}"
+              border_position "top"
+
+              hide_frame_for_single_pane "true"
+
+              mode_normal        "#[fg=#89B4FA,bold]󰬕"
+              mode_locked        "#[fg=#89B4FA]󰬓"
+              mode_resize        "#[fg=#89B4FA]󰬙"
+              mode_pane          "#[fg=#89B4FA]󰬗"
+              mode_tab           "#[fg=#89B4FA]󰬛"
+              mode_scroll        "#[fg=#89B4FA]󰬚"
+              mode_enter_search  "#[fg=#89B4FA]󱁴"
+              mode_search        "#[fg=#89B4FA]󱁴"
+              mode_rename_tab    "#[fg=#89B4FA]󰏫󰬛"
+              mode_rename_pane   "#[fg=#89B4FA]󰏫󰬗"
+              mode_session       "#[fg=#89B4FA]󰌨"
+              mode_move          "#[fg=#89B4FA]󰬔"
+              mode_prompt        "#[fg=#89B4FA]"
+              mode_tmux          "#[fg=#ffc387]"
+
+              tab_normal   "#[fg=#303030] {name} "
+              tab_active   "#[fg=green,bold,italic]{name} "
+            }
+        }
+    }
+}
