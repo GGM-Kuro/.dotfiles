@@ -13,16 +13,7 @@ export CODELY_THEME_PWD_MODE="short" # full, short, home_relative
 export JAVA_HOME='/usr/lib/jvm/java-17-openjdk'
 export GEM_HOME="$HOME/.gem"
 export GOPATH="$HOME/.go"
-
-# ------------------------------------------------------------------------------
-# Flutter enviroment
-# ------------------------------------------------------------------------------
-
-# export FLUTTER_HOME="$HOME/.dev/android-sdk"
-
-
-# export ANDROID_HOME="$HOME/Android/Sdk/platform-tools/adb"
-
+export PIPENV_VENV_IN_PROJECT=1
 
 # ------------------------------------------------------------------------------
 # Custom
