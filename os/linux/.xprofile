@@ -11,6 +11,7 @@ export PATH=/opt/kitty/bin:$PATH
 #   xrandr --output DP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --off --output DP-1 --off &
 # fi
 
+xrandr --output DisplayPort-1 --mode 2560x1440 --pos 0x0 --output DisplayPort-2 --primary --mode 1920x1080 --pos 2568x0
 xxset s off -dpms
 setxkbmap -layout us intl
 numlockx &
