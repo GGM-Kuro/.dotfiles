@@ -4,7 +4,7 @@ local settings = {
   force_reverse_video_cursor = true,
   colors = require 'themes.kuro',
   -- color_scheme = "kuro",
-  window_background_opacity = 0.95,
+  window_background_opacity = 0.96,
   font = wezterm.font_with_fallback({
     'Hack Nerd Font',
     { family = 'Fira Code Nerd Font', weight = 'Regular', italic = false },
