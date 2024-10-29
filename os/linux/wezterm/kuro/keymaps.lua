@@ -10,8 +10,8 @@ local keys = {
   { key = '8', mods = 'CTRL', action = act.PaneSelect },
   -- activate pane selection mode with numeric labels
   {
-    key = '9',
-    mods = 'CTRL',
+    key = 'Enter',
+    mods = 'ALT',
     action = act.PaneSelect {
       alphabet = '1234567890',
     },
@@ -24,6 +24,11 @@ local keys = {
       mode = 'SwapWithActive',
     },
   },
+  {
+    key = '"',
+    mods = 'CTRL|SHIFT|ALT',
+    action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' },
+  }
 }
 
 return keys
