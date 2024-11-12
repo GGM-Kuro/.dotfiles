@@ -1,15 +1,15 @@
 #!/bin/zsh
 
 # # Obtener la carpeta seleccionada
-carpeta_principal=$(ls -F -1 /home/kuro/Desktop/kuro/projects | grep / | fzf)
+main_folder=$(ls -F -1 /home/kuro/Desktop/kuro/projects | grep / | fzf)
 
 
-destino=$(ls -F -1 /home/kuro/Desktop/kuro/projects/$carpeta_principal | grep / )
+target=$(ls -F -1 /home/kuro/Desktop/kuro/projects/$main_folder | grep / )
 
-if [[ $destino == "" ]]; then
-    echo $carpeta_principal
+if [[ $target == "" ]]; then
+    echo $main_folder
     exit 1
 fi
 
-destino="$carpeta_principal/$(echo $destino | fzf)"
-echo $destino
+target="$main_folder/$(echo $target | fzf)"
+echo $target
