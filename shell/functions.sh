@@ -30,4 +30,3 @@ function settarget(){
     echo "$ip_address $machine_name" >! $DOTFILES_PATH/scripts/kuro/target
 }
 
-
