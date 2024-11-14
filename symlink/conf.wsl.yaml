@@ -1,0 +1,21 @@
+- clean: ['~']
+
+- defaults:
+    link:
+      create: true
+      force: true
+
+- link:
+
+    # editors
+    ~/.config/nvim: editors/nvim
+
+    # terminal
+    ~/.p10k.zsh: shell/zsh/themes/.p10k.zsh
+
+    # os
+    ~/.config/ranger: os/linux/ranger
+    ~/.config/zellij: os/linux/zellij
+    ~/.config/yazi: os/linux/yazi
+
+

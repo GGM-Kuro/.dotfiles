@@ -1,0 +1,29 @@
+- clean: ['~']
+
+- defaults:
+    link:
+      create: true
+      force: true
+
+- link:
+
+    # editors
+    ~/.config/nvim: editors/nvim
+
+    # terminal
+    ~/.p10k.zsh: shell/zsh/themes/.p10k.zsh
+
+    # os
+    # ~/.config/picom: os/linux/picom
+    # ~/.config/betterlockscreen: os/linux/betterlockscreen
+    # ~/.config/wezterm: os/linux/wezterm
+    # ~/.config/ranger: os/linux/ranger
+    # ~/.config/kitty: os/linux/kitty
+    # ~/.config/zellij: os/linux/zellij
+    # ~/.config/rofi: os/linux/rofi
+    # ~/.config/yazi: os/linux/yazi
+    # ~/.config/qtile: os/linux/qtile
+    # /home/kuro/.xprofile: os/linux/.xprofile
+    # /home/kuro/.Xresources: os/linux/.Xresources
+
+
