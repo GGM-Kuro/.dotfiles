@@ -8,9 +8,10 @@ layout {
     }
 
     default_tab_template {
-        children
         pane size=2 borderless=true {
             plugin location="file:~/.config/zellij/plugins/zjstatus.wasm" {
+
+
               format_left   "{mode}#[bg=238,fg=blue,bold]{session}#[bg=232,fg=238]{tabs}#[fg=232]"
               format_right  "{command_git} {datetime}"
               format_space  "{char}"
@@ -18,7 +19,7 @@ layout {
               border_enabled  "true"
               border_char     "."
               border_format   "#[fg=blue]{char}"
-              border_position "top"
+              border_position "bottom"
 
               hide_frame_for_single_pane "true"
 
@@ -37,5 +38,6 @@ layout {
               datetime_timezone "America/Bogota"
             }
         }
+        children
     }
 }

@@ -21,6 +21,11 @@ export LINUX_PATH=("$HOME/.dotfiles/os/linux/")
 # ------------------------------------------------------------------------------
 
 export FZF_DEFAULT_OPTS="--color=$fzf_colors --reverse"
+export FZF_DEFAULT_OPTS="-e \
+    --color=bg+:#232530,bg:#1c1e26,spinner:#24a8b4,hl:#df5273\
+    --color=fg:#9da0a2,header:#df5273,info:#efb993,pointer:#24a8b4\
+    --color=marker:#24a8b4,fg+:#dcdfe4,prompt:#efb993,hl+:#df5273
+    --reverse"
 export MYVIMRC="$DOTFILES_PATH/editors/nvim/"
 
 # ------------------------------------------------------------------------------
@@ -30,7 +35,7 @@ path=(
     "/home/kuro/Android/Sdk/platform-tools/"
     "/home/kuro/Android/Sdk/cmdline-tools/latest/bin/"
     "/home/kuro/Android/Sdk/build-tools/34.0.0/"
-    "/home/kuro/.local/bin"	
+    "/home/kuro/.local/bin"
     "$ANDROID_HOME/"
     "/usr/bin/flutter/bin/"
     "$HOME/.rbenv/shims"

@@ -17,3 +17,5 @@ if [ -n "$(ls -A "$DOTFILES_PATH/shell/bash/completions/")" ]; then
 fi
 
 zsh
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
