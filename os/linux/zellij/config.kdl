@@ -9,10 +9,10 @@ keybinds clear-defaults=true {
         bind "t" "Down" { Resize "Increase Down"; }
         bind "n" "Up" { Resize "Increase Up"; }
         bind "s" "Right" { Resize "Increase Right"; }
-        bind "H" { Resize "Decrease Left"; }
-        bind "T" { Resize "Decrease Down"; }
-        bind "N" { Resize "Decrease Up"; }
-        bind "S" { Resize "Decrease Right"; }
+        bind "H" { Resize "Decrease Right"; }
+        bind "T" { Resize "Decrease Up"; }
+        bind "N" { Resize "Decrease Down"; }
+        bind "S" { Resize "Decrease Left"; }
         bind "=" "+" { Resize "Increase"; }
         bind "-" { Resize "Decrease"; }
     }
@@ -23,7 +23,7 @@ keybinds clear-defaults=true {
         bind "t" "Down" { MoveFocus "Down"; }
         bind "n" "Up" { MoveFocus "Up"; }
         bind "p" { SwitchFocus; }
-        bind "n" { NewPane; SwitchToMode "locked"; }
+        bind "n" { NewPane; ToggleActiveSyncTab; SwitchToMode "locked"; }
         bind "d" { NewPane "Down"; SwitchToMode "locked"; }
         bind "r" { NewPane "Right"; SwitchToMode "locked"; }
         bind "x" { CloseFocus; SwitchToMode "locked"; }

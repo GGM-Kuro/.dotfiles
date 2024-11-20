@@ -43,3 +43,4 @@ source "$DOTFILES_PATH/shell/zsh/plugins/zsh-sudo/sudo.plugin.zsh"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
