@@ -300,10 +300,10 @@
   #
   # For example, given these settings:
   #
-  # typeset -g POWERLEVEL9K_DIR_CLASSES=(
-  #     '~/.dotfiles(|/*)'  WORK     ''
-  #     '~(|/*)'            HOME     ''
-  #     '*'                 DEFAULT  '')
+  #   typeset -g POWERLEVEL9K_DIR_CLASSES=(
+  #     '~/work(|/*)'  WORK     ''
+  #     '~(|/*)'       HOME     ''
+  #     '*'            DEFAULT  '')
   #
   # Whenever the current directory is ~/work or a subdirectory of ~/work, it gets styled with one
   # of the following classes depending on its writability and existence: WORK, WORK_NOT_WRITABLE or
@@ -313,7 +313,7 @@
   # option to define custom colors and icons for different directory classes.
   #
   #   # Styling for WORK.
-  # typeset -g POWERLEVEL9K_DIR_HOME_VISUAL_IDENTIFIER_EXPANSION=''
+  #   typeset -g POWERLEVEL9K_DIR_WORK_VISUAL_IDENTIFIER_EXPANSION='⭐'
   #   typeset -g POWERLEVEL9K_DIR_WORK_FOREGROUND=4
   #   typeset -g POWERLEVEL9K_DIR_WORK_SHORTENED_FOREGROUND=4
   #   typeset -g POWERLEVEL9K_DIR_WORK_ANCHOR_FOREGROUND=4
